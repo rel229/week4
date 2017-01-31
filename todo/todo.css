@@ -1,0 +1,51 @@
+.thumbnail > img {
+  height: 150px;
+  ;
+
+}
+
+h1{
+
+  text-align: center;
+  color: #d1d1d1;
+  padding: 25px;
+}
+
+a{
+
+font-family: 'Ultra', sans-serif;
+font-size: 130%;
+color: black;
+text-align: center;
+font-style:
+
+}
+
+body {
+
+  background: #000000 repeat center;
+  width: 100%;
+  height: 100%;
+
+}
+
+
+.dov {
+
+  background: url(postcard.jpg) repeat center;
+}
+
+.dov2 {
+
+  background: url(dov2.jpg) repeat center;
+}
+
+.dov3 {
+
+  background: url(dov3.jpg) repeat center;
+}
+
+.dov4 {
+
+  background: url(dov4.jpg) repeat center;
+}
