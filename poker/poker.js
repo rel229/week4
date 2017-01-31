@@ -26,22 +26,31 @@ window.getDeck = function() {
             });
   });
     return cards;
-
   }
+
 // END DO NOT CHANGE CODE
 
 $(function() {
-
   $("#go").on("click", function(event) {
     event.preventDefault()
-    console.log(cards[1]);
-    console.log(cards[2]);
-    console.log(cards[3]);
-    var newDeck = getDeck().shuffle()
-    $("#test").show()
+    var Deck = getDeck().shuffle();
+      //console.log(Deck[5]);
+      //console.log(Deck[4]);
+      //console.log(Deck[3]);
+      //console.log(Deck[2]);
+      //console.log(Deck[1]);
 
 
+$(".img-responsive").fadeOut(1);
 
-  });
+      $("#c1").attr('src',"http://golearntocode.com/images/cards/" + Deck[1] + ".png");
+      $("#c2").attr('src',"http://golearntocode.com/images/cards/" + Deck[2] + ".png");
+      $("#c3").attr('src',"http://golearntocode.com/images/cards/" + Deck[3] + ".png");
+      $("#c4").attr('src',"http://golearntocode.com/images/cards/" + Deck[4] + ".png");
+      $("#c5").attr('src',"http://golearntocode.com/images/cards/" + Deck[5] + ".png");
+
+$(".img-responsive").fadeIn(1000);
+
+        });
 
   })
