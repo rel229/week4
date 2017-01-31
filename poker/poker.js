@@ -23,17 +23,25 @@ window.getDeck = function() {
   ranks.forEach(function(rank, index) {
     suits.forEach(function(suit, index) {
       cards.push(rank + "_of_" + suit);
-    });
+            });
   });
-  return cards;
-}
+    return cards;
+
+  }
 // END DO NOT CHANGE CODE
 
 $(function() {
 
   $("#go").on("click", function(event) {
     event.preventDefault()
+    console.log(cards[1]);
+    console.log(cards[2]);
+    console.log(cards[3]);
+    var newDeck = getDeck().shuffle()
     $("#test").show()
+
+
+
   });
 
   })
