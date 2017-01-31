@@ -30,5 +30,10 @@ window.getDeck = function() {
 // END DO NOT CHANGE CODE
 
 $(function() {
-  // Your code goes here!
-})
+
+  $("#go").on("click", function(event) {
+    event.preventDefault()
+    $("#test").show()
+  });
+
+  })
