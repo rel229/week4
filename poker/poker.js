@@ -33,23 +33,20 @@ window.getDeck = function() {
 $(function() {
   $("#go").on("click", function(event) {
     event.preventDefault()
+    $(".img-responsive").fadeOut(1);
     var Deck = getDeck().shuffle();
       //console.log(Deck[5]);
       //console.log(Deck[4]);
       //console.log(Deck[3]);
       //console.log(Deck[2]);
       //console.log(Deck[1]);
+      $("#c1").delay(300).attr('src',"http://golearntocode.com/images/cards/" + Deck[1] + ".png");
+      $("#c2").delay(300).attr('src',"http://golearntocode.com/images/cards/" + Deck[2] + ".png");
+      $("#c3").delay(300).attr('src',"http://golearntocode.com/images/cards/" + Deck[3] + ".png");
+      $("#c4").delay(300).attr('src',"http://golearntocode.com/images/cards/" + Deck[4] + ".png");
+      $("#c5").delay(300).attr('src',"http://golearntocode.com/images/cards/" + Deck[5] + ".png");
 
-
-$(".img-responsive").fadeOut(1);
-
-      $("#c1").attr('src',"http://golearntocode.com/images/cards/" + Deck[1] + ".png");
-      $("#c2").attr('src',"http://golearntocode.com/images/cards/" + Deck[2] + ".png");
-      $("#c3").attr('src',"http://golearntocode.com/images/cards/" + Deck[3] + ".png");
-      $("#c4").attr('src',"http://golearntocode.com/images/cards/" + Deck[4] + ".png");
-      $("#c5").attr('src',"http://golearntocode.com/images/cards/" + Deck[5] + ".png");
-
-$(".img-responsive").fadeIn(1000);
+      $(".img-responsive").delay(500).fadeIn(1000);
 
         });
 
